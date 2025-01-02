@@ -1,0 +1,28 @@
+{
+  "name": "util",
+  "version": "1.0.0",
+  "description": "Este projeto automatiza a criação de uma estrutura de servidor Node.js com Express, configurando pastas, arquivos, e dependências essenciais de forma automática.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "node --watch ./src/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bernardinoleite/facil-setup.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bernardinoleite/facil-setup/issues"
+  },
+  "homepage": "https://github.com/bernardinoleite/facil-setup#readme",
+  "type": "module",
+  "dependencies": {
+    "express": "^4.21.2"
+  },
+  "bin": {
+    "setup js": "bin/app.js"
+  }
+}

@@ -23,6 +23,6 @@
     "express": "^4.21.2"
   },
   "bin": {
-    "setup js": "bin/app.js"
+    "leite setup": "bin/app.js"
   }
 }

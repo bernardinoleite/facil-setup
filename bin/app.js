@@ -17,7 +17,7 @@ export class AppError {
 const codeServer = `
 import express from "express";
 import { router } from "./routes/index.js";
-import "./../ormConfig.js"
+// import "./../ormConfig.js"
 
 const app = express();
 
@@ -98,7 +98,7 @@ export class App {
         this.createServer()
         this.createGitIgnore()
         this.createOrmConfig()
-        // this.executeServer()
+        this.createEnv()
     }
 
     initializeProject() {
@@ -178,6 +178,9 @@ export class App {
     }
     createOrmConfig() {
         writeFileSync(`./ormConfig.js`, codeTypeorm, "utf8")
+    }
+    createEnv() {
+        writeFileSync(`./.env`, codeEnv, "utf8")
     }
 
     executeServer() {
